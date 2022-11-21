@@ -19,8 +19,6 @@ function playRound(playerSelection, computerSelection){
             return `You Lose! Rock beats Scissors`;
         else if (playerSelection.toLowerCase() === "scissors" && computerSelection === "Paper")
             return `You Win! Scissors beat Paper`;
-
-        // In case the user doesn´t enter a valid input
         else
             return `Invalid input, try again`;
 }
