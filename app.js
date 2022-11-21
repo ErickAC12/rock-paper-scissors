@@ -25,6 +25,12 @@ function playRound(playerSelection, computerSelection){
             return `Invalid input, try again`;
 }
 
-let computerSelection = getComputerChoice();
-let playerSelection = "rock";
-console.log(playRound(playerSelection, computerSelection));
+function game(){
+    for(let i = 0; i < 5; i++){
+        let computerSelection = getComputerChoice();
+        let playerSelection = prompt("Enter rock, paper or scissors:");
+        console.log(playRound(playerSelection, computerSelection));
+    }
+}
+
+game();
