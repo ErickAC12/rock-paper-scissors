@@ -23,12 +23,14 @@ function playRound(playerSelection, computerSelection){
             return `Invalid input, try again`;
 }
 
-function game(){
-    for(let i = 0; i < 5; i++){
-        let computerSelection = getComputerChoice();
-        let playerSelection = prompt("Enter rock, paper or scissors:");
-        console.log(playRound(playerSelection, computerSelection));
-    }
-}
+const btnRock = document.createElement("button");
+btnRock.textContent = "Rock";
+const btnPaper = document.createElement("button");
+btnPaper.textContent = "Paper";
+const btnScissors = document.createElement("button");
+btnScissors.textContent = "Scissors";
 
-game();
+const container = document.querySelector("#container");
+container.appendChild(btnRock);
+container.appendChild(btnPaper);
+container.appendChild(btnScissors);
